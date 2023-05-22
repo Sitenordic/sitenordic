@@ -43,6 +43,11 @@
     font-weight: 500;
 }
 
+.navbar-container-right-buttons {
+    display: flex; 
+    flex-direction: row; 
+    gap: 7px;
+}
 
 .navbar-container-right-button01 {
     border: none;
@@ -74,12 +79,12 @@
     margin: 0 10px;
     color: #fff;
     font-family: 'Inter';
+    cursor: pointer;
 }
 
 .navbar-container-right li a {
     text-decoration: none;
     color: #fff;
-    text-transform: uppercase;
 }
 
 .notice-section {
