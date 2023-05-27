@@ -1,24 +1,56 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: "Poppins";
+}
+
+@keyframes slideInBottom {
+    from {
+        transform: translateY(50px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.under-const {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fe8a8a;
+    font-weight: 500;
+}
+
+.site-logo {
+    font-size: 26px;
+    color: #0c2a4f;
+    font-weight: 600;
+    list-style: none;
+    text-decoration: none;
 }
 
 .navbar-section {
-    background-color: #110837;
-    border-bottom: 1px solid #fff;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-
-
 .navbar-container {
-    width: 98%;
+    width: 90%;
     margin: auto;
+    padding-top: 14px;
+    padding-bottom: 14px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
-    gap: 40px;
+}
+
+.navbar-container-left {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
 }
 
 .navbar-container-right {
@@ -27,54 +59,235 @@
     flex-direction: row;
     align-items: center;
     justify-content: right;
-    gap: 20px;
-}
-
-.navbar-container-left {
-    width: 10%;
-}
-
-.navbar-container-left-logo {
-    color: #ffffff;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Open Sans";
-    font-size: 28px;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-.navbar-container-right-buttons {
-    display: flex; 
-    flex-direction: row; 
-    gap: 7px;
-}
-
-
-.navbar-container-right-button01 {
-    border: none;
-    padding: 17px 25px 17px 25px;
-    font-size: 16px;
-    background-color: #fff;
-    color: #000000;
-    font-weight: 500;
-    cursor: pointer;
-    border-radius: 100px;
-    border: 1px solid #ffffff;
+    gap: 30px;
 }
 
 .navbar-container-right ul li {
     list-style: none;
     display: inline-block;
     margin: 0 10px;
-    color: #fff;
-    font-family: 'Inter';
+    font-family: 'Poppins';
     cursor: pointer;
 }
 
 .navbar-container-right li a {
     text-decoration: none;
-    color: #fff;
+    color: #0c2a4f;
+}
+
+
+
+.navbar-container-right-buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+.navbar-button-preset-01 {
+    border: 2px solid #0c2a4f;
+    padding: 14px 20px 14px 20px;
+    background-color: #0c2a4f;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.navbar-button-preset-02 {
+    border: 2px solid #0c2a4f;
+    padding: 14px 20px 14px 20px;
+    background-color: #ffffff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #0c2a4f;
+    cursor: pointer;
+}
+
+.landing-page-section {
+    width: 100%;
+    background-image: linear-gradient(#e4f0ff, #c8e1ff);
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.landing-page-container {
+    width: 90%;
+    margin: auto;
+}
+
+.landing-page-heading {
+    font-size: 60px;
+    font-weight: 600;
+    color: #0c2a4f;
+    line-height: 78px;
+    margin-bottom: 30px;
+}
+
+.landing-page-description {
+    font-size: 18px;
+    font-weight: 400;
+    color: #0c2a4f;
+    width: 70%;
+}
+
+.feature-section {
+    background-color: transparent;
+}
+
+.feature-container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    margin-top: -100px;
+}
+
+.feature-card {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: transform 0.3s;
+    animation-name: slideInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #0c2a4f;
+    margin-bottom: 15px;
+}
+
+.feature-card-icon {
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+.feature-card-description {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.feature-card-hyper {
+    font-size: 15px;
+    list-style: none;
+    text-decoration: none;
+    color: #0c2a4f;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+.contact-section {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #ffff;
+}
+
+.contact-container {
+    width: 90%;
+    margin: auto;
+}
+
+.contact-container-heading {
+    font-size: 40px;
+    font-weight: 600;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    color: #0c2a4f;
+}
+
+
+.faq-container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.faq {
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+
+.faq-question {
+    color: #0c2a4f;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 20px;
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+    color: gray;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+.faq.open .faq-answer {
+    display: block;
+}
+
+
+
+.footer-section {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: transparent;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:800px) {
+    .contact-container {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 100px;
+    }
+
+    .navbar-container-right ul li {
+        display: none;
+    }
 }
 
 @media (max-width:900px) {
@@ -83,114 +296,37 @@
     }
 }
 
+@media (max-width:900px) {
+    .navbar-container-right ul li {
+        display: none;
+    }
 
-
-.landing-page-section {
-    width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.75), 
-    rgba(0,0,0,0.75)), url(images/sean-pollock-PhYq704ffdA-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-
-.mainpage-container {
-    padding-top: 300px;
-    padding-bottom: 300px;
-    width: 75%;
-    margin: auto;
-}
-
-.mainpage-heading {
-    font-family: "Inter";
-    color: #fff;
-    font-size: 70px;
-    margin-bottom: 20px;
-}
-
-
-.mainpage-description {
-    font-family: "Inter";
-    color: rgb(229, 229, 229);
-    font-size: 24px;
-    width: 85%;
-    margin-bottom: 30px;
-}
-
-.footer-section {
-    background-color: rgb(244, 244, 244);
-}
-
-.footer-container {
-    width: 75%;
-    margin: auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    text-align: center;
-}
-
-.footer-container-text {
-    font-family: "Inter";
-    font-size: 15px;
-    margin-top: 10px;
-}
-
-
-
-@media (max-width:500px) {
-    .navbar-container {
-        width: 90%;
+    .feature-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 20px;
     }
 }
 
-@media (max-width:500px) {
-    .navbar-container {
-        width: 90%;
+
+@media (max-width:600px) {
+    .landing-page-heading {
+        font-size: 55px;
+        line-height: 60px;
     }
-}
-
-@media (max-width:1100px) {
-    .mainpage-container {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-
-@media (max-width:750px) {
-    .mainpage-heading {
-        font-size: 50px;
-    }
-
-    .mainpage-description {
-        font-size: 20px;
-    }
-
-
 }
 
 @media (max-width:450px) {
-    .mainpage-heading {
-        font-size: 38px;
+    .feature-container {
+        grid-template-columns: none;
+        grid-template-rows: repeat(4, 1fr);
+        column-gap: 20px;
     }
 
-    .mainpage-description {
-        font-size: 18px;
+    .landing-page-heading {
+        font-size: 47px;
+        line-height: 55px;
     }
-
 
 }
-
-
-@media (min-width:1400px) {
-    .mainpage-heading {
-        font-size: 80px;
-    }
-
-    .mainpage-description {
-        font-size: 35px;
-    }
-
-
-}
-
-
